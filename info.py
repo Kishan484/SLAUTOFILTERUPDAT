@@ -31,7 +31,7 @@ INDEX_CHANNELS = [int(index_channels) if id_pattern.search(index_channels) else 
 auth_channel = environ.get('AUTH_CHANNEL', '')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-
+BOT_STARTING_TIME = environ.get('BOT_STARTING_TIME', '-1001939009057')
 # MongoDB information
 DATABASE_URL = environ.get('DATABASE_URL', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
