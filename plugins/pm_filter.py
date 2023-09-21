@@ -214,7 +214,7 @@ async def languages_cb_handler(client: Client, query: CallbackQuery):
     if int(req) != query.from_user.id:
         return await query.answer(f"Hello {query.from_user.first_name},\nDon't Click Other Results!", show_alert=True)
 
-    langs = ['english', 'tamil', hindi, 'malayalam', 'telugu']
+    langs = ['English', 'Tamil', 'Hindi', 'Malayalam', 'Telugu']
     btn = [
         [
             InlineKeyboardButton(
