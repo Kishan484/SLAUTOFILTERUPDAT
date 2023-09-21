@@ -46,8 +46,8 @@ AUTO_FILTER = is_enabled((environ.get('AUTO_FILTER', "True")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SPELL_CHECK = is_enabled(environ.get("SPELL_CHECK", "True"), True)
 SHORTLINK = is_enabled((environ.get('SHORTLINK', "True")), True)
-AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "False")), False)
-WELCOME = is_enabled((environ.get('WELCOME', "False")), False)
+AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "False")), True)
+WELCOME = is_enabled((environ.get('WELCOME', "True")), False)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), True)
 LINK_MODE = is_enabled(environ.get("LINK_MODE", "True"), False)
@@ -55,18 +55,18 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 
 # Other
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "✅ I Found: <code>{query}</code>\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating} / 10</a>\n☀️ Languages: {languages}\n📀 RunTime: {runtime} Minutes\n🔖 sʜᴏʀᴛ : {plot} \n🗣 Requested by: {message.from_user.mention}\n©️ Powered by: <b>{message.chat.title}</b>")
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "✅ I Found: <code>{query}</code>\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating} / 10</a>\n☀️ Languages: {languages}\n📀 RunTime: {runtime} Minutes\n🔖 sʜᴏʀᴛ : {plot} \n🗣 Requested by: {message.from_user.mention}\n©️ Powered by: <b>{message.chat.title}</b>")
 FILE_CAPTION = environ.get("FILE_CAPTION", "<i>{file_name}</i>\n\nᴘʟᴇᴀsᴇ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ᴄʟᴏsᴇ ʙᴜᴛᴛᴏɴ ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ sᴇᴇɴ ᴛʜᴇ ᴍᴏᴠɪᴇ")
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
-SHORTLINK_URL = environ.get("SHORTLINK_URL", "mdiskshortner.link")
-SHORTLINK_API = environ.get("SHORTLINK_API", "36f1ae74ba1aa01e5bd73bdd0bc22aa915443501")
+SHORTLINK_URL = environ.get("SHORTLINK_URL", "")
+SHORTLINK_API = environ.get("SHORTLINK_API", "")
 WELCOME_TEXT = environ.get("WELCOME_TEXT", "Hello {mention}, Welcome to {title} group!")
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/MOVIE_WORLD_IN_MOVIE")
 
 # stream features vars
-F2LINK_C = int(environ.get("F2LINK_C", "-1001696019751"))
-ON_DWNLD = environ.get("ON_DWNLD", "aks-file-to-link-ashubhskeleton1.koyeb.app")
-ON_WATCH = environ.get("ON_WATCH", "aks-file-to-link-ashubhskeleton1.koyeb.app")
+F2LINK_C = int(environ.get("F2LINK_C", ""))
+ON_DWNLD = environ.get("ON_DWNLD", "https://grim-rani-kishan484.koyeb.app/")
+ON_WATCH = environ.get("ON_WATCH", "https://grim-rani-kishan484.koyeb.app/")
                            
 # Log
 LOG_STR = "Current Cusomized Configurations are:-\n"
